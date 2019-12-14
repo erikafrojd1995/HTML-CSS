@@ -1,0 +1,1453 @@
+@import"./variables";
+@import"./colors";
+@import"./mixins";
+
+
+html, body{
+    height: 100%;
+    
+    
+
+}
+
+
+
+
+
+.navbar-brand {
+    margin-left: -35px;
+
+        @include tablet{
+         margin-top: -80px;
+        }
+}
+
+.navbar-text{
+    text-transform:uppercase ;
+    font-weight: 600;
+    margin-right: 6.3rem;
+    font-size: 0.85em;
+    display: none;
+
+    @include tablet{
+            display: flex;
+            margin-top: 1rem;
+    }
+
+    .fas{
+        @include desktop{
+            margin-top: 1rem;
+        }
+    }
+
+    .navbar-text i{
+        margin-right: 1rem;
+        font-size: 1.5em;
+        margin-top:0.05rem;
+    }
+
+
+}
+
+
+
+#header{
+    height:400px;
+    overflow: hidden;
+    border-bottom:2px solid color(mygray);
+
+    
+    @include small-devices{
+        height:480px;
+    }
+
+    @include tablet{
+        height:600px;
+    }
+
+    @include desktop{
+        height:750px;
+    }
+
+    @include wide-desktop{
+        height:850px;
+    }
+
+
+
+    .jumbotron{
+        background: transparent;
+
+        }
+    
+        h1{
+            font-size: 2.4em;
+
+            @include desktop{
+                font-size: 4.5em;
+            }
+        }
+    
+        p{
+            font-weight: 600;
+            font-size: 0.7em;
+
+            @include desktop{
+                font-size: 1.3em;
+                margin-top: 0.5rem;
+
+            }
+        }
+    
+        img{
+            width:90%;
+            margin-top:0.8rem;
+
+                @include tablet{
+                    
+                        margin-top: 6rem;
+                }
+
+        }
+    
+    }
+
+
+
+
+
+#announcement{
+    border-bottom: 2px solid color(mygray);
+
+    .jumbotron{
+        background: transparent;
+        text-align: center;
+        margin-bottom: 0;
+
+        @include desktop{
+            display: flex;
+    
+        }
+
+          .container{
+
+            @include desktop{
+                display: flex;
+                
+            }
+                
+                h1{
+                    font-size: 1.8rem;
+                    margin-bottom:0;
+                    font-weight: 700;
+                    padding: 0 1rem;
+        
+                    @include desktop{
+                        flex:3;
+                        text-align: right;
+                        font-size: 2rem;
+                                          
+                    }
+                }
+        
+                i{
+                    font-size: 2.5rem;
+                    margin: 1rem 0 ;
+        
+                    @include desktop{
+
+                            display: none; 
+                    }
+                    
+                }
+        
+                p{
+                    padding: 0 1rem;
+                    
+                    @include desktop{
+                            flex:6;
+                            text-align: left;
+                            margin: 0.3rem;
+                    }
+                    
+        
+                }
+            
+            }
+
+
+        }
+
+    
+    }
+       
+
+
+
+#video{
+    border-bottom: 2px solid color(mygray);
+
+    .jumbotron{
+        background: transparent;
+        text-align: center;
+
+        img{
+            width:80%;
+            margin-top:0.8rem;
+
+            @include desktop{
+                    width:70%;
+                    margin-top:0.8rem;
+            }
+
+            @include wide-desktop{
+
+                    width:70%;
+                    margin-top:0.8rem;
+                
+            }
+        }
+        .steps{
+            justify-content: space-between;
+
+            @include desktop{
+                    display: flex;
+                    justify-content: space-between; 
+            } //
+
+            @include wide-desktop{
+
+                    display: flex;    
+                
+                
+            }
+
+            }
+
+
+            .howItWorksPic1{
+                width:15%;
+                margin-top:0.8rem; 
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include desktop{
+                        width:40%;
+                        margin-top:3rem;
+                }
+
+                @include wide-desktop{
+                        width:28%;
+                        margin-top:3rem;       
+                }
+            }
+
+            .howItWorksPic2{
+                width:15%;
+                margin-top:0.8rem; 
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include desktop{
+                    width:40%;
+                    margin-top:3rem;
+            }
+
+            @include wide-desktop{
+                width:28%;
+                margin-top:3rem;       
+        }
+
+            }
+
+            .howItWorksPic3{
+                width:15%;
+                margin-top:0.8rem; 
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+
+                @include desktop{
+                    width:40%;
+                    margin-top:3rem;
+            }
+
+            @include wide-desktop{
+                width:28%;
+                margin-top:3rem;       
+        }
+            
+            }
+
+            h6{
+                padding: 0.5rem;
+                font-size:1rem;
+
+                @include desktop{
+                    padding: 0.5rem;
+                    font-size:1rem;
+                    
+                }
+
+                @include wide-desktop{
+
+                        padding: 0.5rem;
+                        font-size:1.1rem;
+                        
+                }
+            }
+
+
+            i{
+                display: none;
+
+                @include desktop{
+                        display: block;
+                        color: color(myblue);
+                        font-size: 1rem;
+                        position: relative;
+                        top: 78px;
+                    
+                }
+
+                @include wide-desktop{
+                        display: block;
+                        color: var(--myblue);
+                        font-size: 1rem;
+                        position: relative;
+                        top: 70px;
+                }
+            }
+
+            h1{
+                @include desktop{
+                        padding:40px;
+                }
+
+                @include wide-desktop{
+                    padding:40px;
+                }
+
+            }
+        }
+    }
+//
+
+#benefits{
+
+    border-bottom: 2px solid color(mygray);
+
+
+    .jumbotron{
+        background: transparent;
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        
+
+        .benefitWrapper{
+            display: grid;
+            align-items: center;
+
+            .benefitOne{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                padding: 20px;
+
+
+                @include tablet{
+                    display: grid;
+                    grid-template-columns: 30% 70% ;
+                    align-items: center;
+                    margin-top: 8% ;
+                    margin-right: 6%;
+                    margin-left: 6%;
+                    padding: 2px;
+                }
+
+                @include desktop{
+                    display: grid;
+                    grid-template-columns: 1fr 200px 1fr;
+                    align-items: center;
+                    
+                }
+                
+
+
+                .benefitTitleOne{
+                    grid-column: 1;
+                    text-align: left;
+
+                    h6{
+                        @include desktop{
+                            grid-column: 1;
+                            font-size: 26px;
+                            text-align: right;
+                            align-items: center;
+                        }     
+                            
+                    }
+            
+                }
+
+                .benefitPicOne{
+                    grid-column: 2;
+
+                    @include tablet{
+                        grid-column: -1/2;
+                        grid-row: -1/3;
+                    }
+
+                    @include desktop{
+                        grid-column:2;
+                        grid-row: 1;
+                    }
+
+                    img{
+                        width: 45%;
+
+
+                        @include tablet{
+                            width:45%
+                            
+                        }
+
+                        @include desktop{
+                            width: 80%;
+                        }
+
+                    }
+                    
+                }
+
+                .benefitTextOne{
+                    grid-column: 1/-1;
+                    text-align: left;
+
+                        
+                    @include tablet{
+                        grid-column: 1;
+                    }
+
+                    @include desktop{
+                        grid-column: 3;
+                        font-size: 16px;
+                        text-align: left;
+                            
+                    }
+
+                }
+ 
+            }
+
+
+            
+            .benefitTwo{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    padding:20px;
+
+                    @include tablet{
+                        display: grid;
+                        grid-template-columns: 30% 70% ;
+                        align-items: center;
+                        margin-top: 8% ;
+                        margin-right: 6%;
+                        margin-left: 6%;
+                        padding: 2px;
+                    }
+    
+                    @include desktop{
+                        display: grid;
+                        grid-template-columns: 1fr 200px 1fr;
+                        align-items: center;
+                        
+                    }
+                    .benefitTitleTwo{
+                        grid-column: 1;
+                        text-align: left;
+
+                         h6{
+                            @include desktop{
+                                grid-column: 1;
+                                font-size: 26px;
+                                text-align: right;
+                                align-items: center;
+                            }  
+                        }
+                        
+                    }
+    
+                    .benefitPicTwo{
+                        grid-column: 2;
+
+                        @include tablet{
+                            grid-column: -1/2;
+                            grid-row: -1/3;
+                        }
+
+                        @include desktop{
+                            grid-column:2;
+                            grid-row: 1;
+                        }
+    
+                        img{
+                            width: 45%;
+
+                            @include desktop{
+                                width: 80%;
+                            }
+                        }
+                    }
+    
+                    .benefitTextTwo{
+                        grid-column: 1/-1;
+                        margin-top: 12px;
+                        text-align: left;
+
+                        @include tablet{
+                            grid-column: 1;
+                        }
+
+                        @include desktop{
+                            grid-column: 3;
+                            font-size: 16px;
+                            text-align: left;
+                                
+                        }
+                    }
+                }
+            
+            .benefitThree{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    padding:20px;
+    
+
+                    @include tablet{
+                        display: grid;
+                        grid-template-columns: 30% 70% ;
+                        align-items: center;
+                        margin-top: 8% ;
+                        margin-right: 6%;
+                        margin-left: 6%;
+                        padding: 2px;
+                    }
+
+                    @include desktop{
+                        display: grid;
+                        grid-template-columns: 1fr 200px 1fr;
+                        align-items: center;
+                        
+                    }
+    
+                    .benefitTitleThree{
+                        grid-column: 1;
+                        text-align: left;
+
+                        h6{
+                            @include desktop{
+                                grid-column: 1;
+                                font-size: 26px;
+                                text-align: right;
+                                align-items: center;
+                            }  
+                        }
+                        
+                    }
+    
+                    .benefitPicThree{
+                        grid-column: 2;
+
+                        @include tablet{
+                            grid-column: -1/2;
+                            grid-row: -1/3;
+                        }
+
+                        @include desktop{
+                            grid-column:2;
+                            grid-row: 1;
+                        }
+    
+                        img{
+                            width: 45%;
+
+                            @include desktop{
+                                width: 80%;
+                            }
+
+                        }
+
+                    }
+    
+                    .benefitTextThree{
+                        grid-column: 1/-1;
+                        margin-top: 12px;
+                        text-align: left;
+
+
+                        @include tablet{
+                            grid-column: 1;
+                        }
+
+                        @include desktop{
+                            grid-column: 3;
+                            font-size: 16px;
+                            text-align: left;
+                                
+                        }
+    
+                    }
+                }  
+
+        }
+
+    }
+
+ }
+
+
+#features{
+    border-bottom: 2px solid color(mygray);
+    overflow: hidden;
+
+    .jumbotron{
+        background: transparent;
+        text-align: center;
+
+        
+        h1{
+            margin-bottom:50px ;
+        }   
+
+        .features-content{
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @include desktop{
+                grid-template-columns: 3fr 1fr;
+
+            }
+
+            .features-left{
+                    
+                @include tablet{
+                     grid-column:1;
+                }
+
+                .features-list{
+
+                    display: grid;
+                    grid-template-columns: 1fr;
+
+                    @include tablet{
+                        grid-template-columns:1fr 1fr;
+                    }
+    
+
+                    .feature-box{
+                        display: block;
+                        text-align: center;
+                        margin-bottom: 1.5rem;
+
+                        @include tablet{
+                        // display:flex;
+                        margin-bottom: 1.5rem;
+                        text-align: left;
+                        font-size:12px;
+                        }
+
+                        @include desktop{
+                            display: flex;
+                            margin-bottom: -3rem;
+                            
+                        }
+
+                        .feature-image{
+                            margin-bottom: 1rem;
+    
+                            @include tablet{
+                                
+                                margin-right: 2rem;
+                                margin-bottom:1rem;
+
+                                @include desktop{
+                                    margin: 1rem 0;
+                                    margin-bottom:  2rem 0;
+                                }
+                                 img{
+                                     width: 15%;
+                                     margin-left: 2rem;
+                                     margin-bottom: -1rem;
+
+                                     @include desktop{
+                                         width: 100%;
+                                         margin-top: 1rem;
+                                         margin-left: 1rem;
+                                         
+                                     }
+                                }    
+                                
+                            }
+                        }
+
+
+                        .feature-content{
+
+                            @include tablet{
+                                margin: 2rem;
+                                }
+    
+                                h6{
+                                font-size: 20px ;
+
+                                @include tablet{
+                                font-size: 15px;
+                                }
+                        
+                        
+                                p{
+                                margin-bottom: 1rem;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }                
+            }
+        }
+            .features-right{
+                display: none;
+
+
+                @include tablet{
+                    display: block;
+                    grid-column: 2;
+
+                }
+
+
+                .img-laptop{
+                    @include tablet{
+                        display: none;
+                    }
+
+                    @include desktop{
+                        display: block;
+                        grid-column: 2;
+                        margin-right: -24rem;
+                    }
+
+                    @include wide-desktop{
+                        margin-right: -40rem;
+                    }
+                    
+
+                }
+
+                .img-mobile{
+
+                    margin-right:2rem;
+                    z-index: -1;
+                    overflow: hidden;
+                    margin-right: -10rem;
+
+                    @include desktop{
+                        display: none;
+                    }
+
+                }
+            }
+    
+        }
+    } 
+}   
+
+#testmonials{
+    
+    border-bottom: 2px solid color(mygray);
+    overflow: hidden;
+
+    .jumbotron{
+        background: transparent;
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .testmonials-content-wrapper{
+            align-items: center;
+
+            @include desktop{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin:40px;
+                padding:10px
+            }
+
+            .left-content{
+
+                .top-image{
+
+                    
+                    @include tablet{
+                        display: flex;
+                        align-items: left;
+                    }
+                }
+
+                .testmonials-left{
+
+                    @include desktop{
+                        margin-left: 5rem; 
+                    }
+
+                    p{
+                        font-size: 19px;
+                        font-style: italic;
+
+                        
+                        @include desktop{
+                            text-align: left;
+                            font-style: italic;
+                            font-weight: 500; 
+                        }
+                    }
+
+                        .testmonials-left-bottomcontent{
+                        
+                            
+                                margin-top:2rem;
+
+                                h6{
+                                    font-size: 1.5rem;
+
+                                    @include desktop{
+                                        text-align: left;
+                                    }
+                                }
+
+                                p{
+                                    font-size: 12px;
+                                    @include desktop{
+                                        text-align: left;
+                                    }
+                                }    
+        
+                        }
+                    
+                }
+            }
+        
+
+
+
+            .testmonials-right{
+
+                @include desktop{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    margin-top: 5rem;
+                }
+
+                .right-image{
+                    
+                    img{
+                        z-index: -1;
+                    }
+
+                }
+
+                .testmonials-buttons{
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include desktop{
+                        padding: 30px;
+                        margin-right: 5px;
+                    }
+                    
+                    .button {
+                        background-color:color(white); 
+                        border: 1px solid color(myblue); 
+                        color:color(myblue); 
+                        padding: 11px 20px; 
+                        background:transparent;
+                        margin-top: 1rem;
+
+                        @include desktop{
+                            margin-top:8rem;
+
+                        }
+                        
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}  
+
+#news{
+    border-bottom: 2px solid color(mygray);
+
+    .jumbotron{
+
+        background: transparent;
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .container{
+
+            .news-content-wrapper{
+
+                @include tablet{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr ;
+                    margin:50px;
+                }
+
+                @include desktop{
+
+                    display: flex;
+                }
+
+                .news-content-one{
+
+                    @include tablet{
+                        grid-column: 1;
+                    }
+
+                    p{
+                        font-size:20px;
+                        font-style: italic;
+                        @include tablet{
+                            font-size: 20px;
+                        }
+
+                    }
+                    .news-img-one{
+                         img{
+                            width: 60%;
+
+                            @include tablet{
+                                width: 100%;
+                            }
+                         }
+                    }
+
+                    border-bottom: 2px solid color(mygray);
+                    border-bottom-width: thin;
+                    
+                    
+
+                }
+
+                .news-content-two{
+
+                    @include tablet{
+                        grid-column: 3;
+                        
+                    }
+
+
+                    p{
+                        font-size:20px;
+                        font-style: italic;
+
+                        @include tablet{
+                            font-size: 20px;
+                        }
+                    }
+
+                    .news-img-two{
+                        img{
+                           width: 60%;
+
+                           @include tablet{
+                            width: 100%;
+                        }
+
+                        }
+                   }
+
+                   border-bottom: 2px solid color(mygray);
+                   border-bottom-width: thin;
+                }
+                
+                .news-content-three{
+
+                    @include tablet{
+                        grid-column: 2/2;
+                    }
+
+                     @include desktop{
+
+                        margin-top:-14px;
+                     }
+
+                    p{
+                        font-size:20px;
+                        font-style: italic;
+                        @include tablet{
+                            font-size: 20px;
+                        }
+                    }
+
+                    .news-img-three{
+                        img{
+                           width: 60%;
+
+                           @include tablet{
+                            width: 100%;
+
+                            @include desktop{
+                                width: 90%;
+                            }
+                        }
+                    }
+
+                }
+
+                border-bottom: 2px solid color(mygray);
+                border-bottom-width: thin;
+
+                }
+
+                
+            }
+        }
+        
+    }
+
+}
+
+#plans{
+    border-bottom: 2px solid color(mygray);
+
+    .jumbotron{
+        background: transparent;
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 0;
+
+        .container{
+
+            .plansHead{
+                margin-bottom: 2rem;
+
+                @include tablet{
+                    margin-bottom: 4rem;
+                }
+            }
+
+            .plan-content-wrapper{
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items:center ;
+
+
+                @include tablet{
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                
+    
+
+                .planBoxOne{
+                    border: 1px solid color(myblue);
+                    width:240px;
+                    height: 400px;
+                    margin-top: 1rem;
+                    align-items: center;
+                    display: inline-block;
+                    grid-column: 1;
+                    justify-content: center;
+                    z-index: -1;
+
+                    @include tablet{
+                        grid-column: 1;
+                        
+                    }
+                   
+
+                    .boxOneContent{
+                        
+                        .topContent{
+                            display: flex;
+                            justify-content: center;
+                            margin-top:0.5rem;
+                            .fas{
+                                margin-top:1rem;
+                            }
+                        }
+                        .boxOneList{
+
+                            ul{
+                                list-style-type: none;
+                                .listWrapper{
+                                    
+                                    li{
+                                        border-bottom: 2px solid color(mygray);
+                                        border-bottom-width: thin;
+                                        margin-top:0.5rem;
+                                        text-align: left;
+                                        font-size:px;
+                                        .far{
+                                            padding:5px;
+                                        }
+
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .boxOneButton{
+                            
+                            margin-top: 1rem;
+                            
+                        }
+                    }
+                }
+
+                .planBoxTwo{
+                    border: 1px solid color(myblue);
+                    background: color(myblue);
+                    width:240px;
+                    height: 440px;
+                    margin-top: 1rem;
+                    display: inline-block;
+                    grid-row:2;
+                    z-index: -1;
+                    
+                    @include tablet{
+                        height: 450px;
+                        margin-top: -1rem;
+                        
+                    }
+                    
+
+
+                    .boxTwoContent{
+                        
+                        
+                        
+                        
+
+                        p{
+                            margin-top:-1rem ;
+                            color:color(mysilver)
+                        }
+
+                        h6{
+                            margin-bottom:1rem;
+                            font-weight: lighter;
+                            color:color(mywhite);
+                        }
+
+                        h1{
+                            color:color(mywhite)
+                        }
+
+                        
+                        .topContent{
+                            display: flex;
+                            justify-content: center;
+                            margin-top:0.5rem;
+                            color:color(mysilver);
+                            
+                            .fas{
+                                margin-top:1rem;
+                                color:color(mybabyblue)
+                                
+                                
+                            }
+
+
+
+                        }
+
+                        .boxTwoList{
+
+                            ul{
+                                list-style-type: none;
+                                
+
+                                .listWrapper{
+                                    
+                                    li{
+                                        
+                                        border-bottom: 2px solid color(mygray);
+                                        border-bottom-width: thin;
+                                        margin-top:0.5rem;
+                                        text-align: left;
+                                        color:color(mysilver);
+
+                                            .far{
+                                                padding:5px;
+                                            }
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .boxTwoButton{
+                            
+                            margin-top: 1rem;
+                            .btn{
+                                background-color:white ;
+                                color:color(myblue)
+                            }    
+                        }
+                    }
+                }
+
+                .planBoxThree{
+                    border: 1px solid color(myblue);
+                    width:240px;
+                    height: 400px;
+                    margin-top: 1rem;
+                    display: inline-block;
+                    
+
+
+
+                    .boxThreeContent{
+
+                        
+                        
+                        .topContent{
+                            display: flex;
+                            justify-content: center;
+                            margin-top:0.3rem;
+                            .fas{
+                                margin-top:1rem;
+                            }
+
+                        }
+
+                        p{
+                            margin-top: -1rem;
+                            
+                        }
+                        
+                        .boxThreeList{
+
+                            ul{
+                                list-style-type: none;
+
+                                .listWrapper{
+                                    
+                                    li{
+                                        border-bottom: 2px solid color(mygray);
+                                        border-bottom-width: thin;
+                                        text-align: left;
+                                        
+                                        .far{
+                                            padding:5px;
+                                        }
+
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .boxThreeButton{
+                            
+                            margin-top:2.5rem;
+                            
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+}
+
+#getintouch {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: url(/inlamning/images/Getintouch/186be669-3441-4bb3-b96f-8318de95a860.l.png) no-repeat;
+    background-size: cover;
+    padding: 2rem 0;
+    color:color(myblue);
+
+    @include tablet{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include desktop{
+        padding-right: 100px; 
+        
+    }
+
+    .contact-box {
+        background: color(mywhite);
+        padding: 2rem;
+        margin: 1.5rem;
+
+        @include tablet{
+            grid-column: 2;
+            margin-right: 3rem;
+        }
+
+
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li{
+                i {
+                    margin-right: 1.5rem;
+                }
+            } 
+        }
+    
+    }
+    
+}
+
+#bottomcontent{
+
+    .jumbotron{
+        margin-top: 0;
+        margin-bottom: 0;
+        
+        .container{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+
+
+            
+            .top-content{
+
+                .middle{
+
+                    p{
+                        @include tablet{
+                        font-size: 20px;
+                        }
+    
+                        @include desktop{
+                            font-size: 14px;
+                            padding: 4rem;
+                            
+                        }
+                    }
+                }
+
+
+
+                .top-image{
+                   
+                    img{  
+                        
+                        width: 80%;
+
+                        @include tablet{
+                            width: 40%;
+                        }
+                        @include desktop{
+                            width: 30%;
+                        }
+                    }
+                    
+                }
+
+            }    
+            .bottom{
+               
+
+                .formWithButton{
+                    width: 280px;
+                    height: 40px;
+                    display: flex;
+                    background-color: color(mywhite);
+                    border: solid color(mywhite);
+
+                  
+                    .input{
+                        border: none;
+                        // width: 70%;
+                        color: color(mysilver);
+                       
+                    }
+    
+                    .btn{
+                        width: 50%;
+                        border-radius:5px ;
+ 
+                    }
+    
+                }
+
+                .social-media-logos{
+                    margin-top: 1rem;
+
+
+                    
+                    .dot{
+                        height: 25px;
+                        width: 25px;
+                        background-color: #FFF;
+                        border-radius: 50%;
+                        display: inline-block;
+
+                        @include tablet{
+                            margin-right: 0.3rem;
+                            margin-left: 0.3rem;
+                            }
+                    }
+
+                    .fab{
+                        color:color(myblue);
+
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+#footer{
+    
+    text-align: center;
+    padding: 8px;
+    background: color(mydarkblue);
+    color: color(mysilver);
+    font-size:9px ;
+
+    @include tablet{
+        font-size:12px; 
+        
+    }
+}
+
+
+
+    
+
+

@@ -1,0 +1,69 @@
+$blue: #3d88b5;
+$gray: #e8eff7;
+$white: #fff;
+$silver:#b4d0e4;
+$babyblue: #7092BE;
+$darkblue: #0d557a;
+
+$colors: (
+ myblue: $blue,
+ mygray: $gray,
+ mywhite:$white,
+ mysilver:$silver,
+ mybabyblue:$babyblue,
+ mydarkblue:$darkblue
+);
+
+@function color($color-name)
+{
+    @return map-get($colors, $color-name)
+
+};
+
+.bg-mygray{
+    background-color:color(mygray) !important; 
+};
+
+//
+.bg-myblue{
+    background-color: color(myblue);
+}
+
+.text-myblue{
+    color: color(myblue) !important;
+};
+
+.text-mysilver{
+    color: color(mysilver) !important;
+};
+
+
+.btn-myblue
+{
+color:#fff ;
+background-color: color(myblue);
+border-color:color(myblue);
+
+ &:hover
+    {
+    color:#fff ;
+    background-color: rgb(35, 96, 134);
+    border-color: color(myblue);
+    }
+}
+
+
+
+.btn-myblue:hover
+{
+color:#fff ;
+background-color: rgb(35, 96, 134);
+border-color: color(myblue);
+}
+
+.btn{
+    padding: 0.376rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0;
+    font-weight: 450;
+}
